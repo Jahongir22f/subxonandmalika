@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subxon & Malika — 20 Sentabr 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== ENVELOPE INTRO CARD ========== -->
+  <div id="envelope-overlay">
+    <div id="envelope-card">
+      <div id="envelope-stamp">
+        <div class="stamp-inner">
+          <div class="stamp-rose">🌹</div>
+          <div class="stamp-text">S & M</div>
+          <div class="stamp-date">2026</div>
+        </div>
+      </div>
+      <div id="envelope-names">Subxon & Malika</div>
+      <div id="envelope-tagline">Nikoh taklifnomasini ochish uchun bosing</div>
+      <div id="envelope-tagline-ru">Нажмите, чтобы открыть приглашение</div>
+      <div id="envelope-wax-seal" onclick="openInvitation()">
+        <span>💌</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== MAIN INVITATION ========== -->
+  <div id="main-content" class="hidden">
+
+    <!-- Falling petals canvas -->
+    <canvas id="petals-canvas"></canvas>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero">
+      <div class="floral-corner top-left">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><path d="M10,60 Q30,10 60,10 Q30,30 10,60Z" fill="#d4af37"/><path d="M10,60 Q10,30 40,20 Q20,40 10,60Z" fill="#f4c2c2"/><circle cx="60" cy="10" r="5" fill="#d4af37"/><circle cx="40" cy="20" r="4" fill="#f4c2c2"/><path d="M5,80 Q20,50 50,40" stroke="#d4af37" stroke-width="1.5" fill="none"/><circle cx="5" cy="80" r="3" fill="#f4c2c2"/><path d="M20,90 Q35,65 60,55" stroke="#f4c2c2" stroke-width="1" fill="none"/></g></svg>
+      </div>
+      <div class="floral-corner top-right">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6" transform="scale(-1,1) translate(-120,0)"><path d="M10,60 Q30,10 60,10 Q30,30 10,60Z" fill="#d4af37"/><path d="M10,60 Q10,30 40,20 Q20,40 10,60Z" fill="#f4c2c2"/><circle cx="60" cy="10" r="5" fill="#d4af37"/><circle cx="40" cy="20" r="4" fill="#f4c2c2"/><path d="M5,80 Q20,50 50,40" stroke="#d4af37" stroke-width="1.5" fill="none"/><circle cx="5" cy="80" r="3" fill="#f4c2c2"/></g></svg>
+      </div>
+      <div class="floral-corner bottom-left">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6" transform="scale(1,-1) translate(0,-120)"><path d="M10,60 Q30,10 60,10 Q30,30 10,60Z" fill="#d4af37"/><path d="M10,60 Q10,30 40,20 Q20,40 10,60Z" fill="#f4c2c2"/><circle cx="60" cy="10" r="5" fill="#d4af37"/><path d="M5,80 Q20,50 50,40" stroke="#d4af37" stroke-width="1.5" fill="none"/></g></svg>
+      </div>
+      <div class="floral-corner bottom-right">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6" transform="scale(-1,-1) translate(-120,-120)"><path d="M10,60 Q30,10 60,10 Q30,30 10,60Z" fill="#d4af37"/><path d="M10,60 Q10,30 40,20 Q20,40 10,60Z" fill="#f4c2c2"/><circle cx="60" cy="10" r="5" fill="#d4af37"/><path d="M5,80 Q20,50 50,40" stroke="#d4af37" stroke-width="1.5" fill="none"/></g></svg>
+      </div>
+
+      <div class="hero-content fade-in-section">
+        <p class="save-the-date-label">— Save the Date —</p>
+        <div class="couple-names shimmer-text">
+          <span class="name-bride">Subxon</span>
+          <span class="ampersand">&amp;</span>
+          <span class="name-groom">Malika</span>
+        </div>
+        <div class="hero-divider">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg"><path d="M0,10 Q50,0 100,10 Q150,20 200,10" stroke="#d4af37" stroke-width="1.5" fill="none"/><circle cx="100" cy="10" r="3" fill="#d4af37"/></svg>
+        </div>
+        <p class="wedding-date">20 Sentabr 2026 · 20 Сентября 2026</p>
+        <p class="venue-hero">The Grand Rose Garden, Toshkent</p>
+        <a href="#countdown" class="scroll-btn">↓</a>
+      </div>
+    </section>
+
+    <!-- ========== COUNTDOWN SECTION ========== -->
+    <section id="countdown" class="fade-in-section">
+      <div class="section-floral-divider top">
+        <svg viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg"><path d="M0,20 Q100,5 200,20 Q300,35 400,20" stroke="#d4af37" stroke-width="1" fill="none" opacity="0.5"/><circle cx="200" cy="20" r="4" fill="#d4af37" opacity="0.7"/><circle cx="100" cy="12" r="2.5" fill="#f4c2c2" opacity="0.7"/><circle cx="300" cy="28" r="2.5" fill="#f4c2c2" opacity="0.7"/></svg>
+      </div>
+      <p class="section-subtitle">Nikohgacha qoldi / До свадьбы осталось</p>
+      <h2 class="section-title">Kutib qoling</h2>
+      <div id="countdown-timer">
+        <div class="time-block">
+          <span id="days">00</span>
+          <label>Kun / Дней</label>
+        </div>
+        <div class="time-sep">:</div>
+        <div class="time-block">
+          <span id="hours">00</span>
+          <label>Soat / Часов</label>
+        </div>
+        <div class="time-sep">:</div>
+        <div class="time-block">
+          <span id="minutes">00</span>
+          <label>Daqiqa / Минут</label>
+        </div>
+        <div class="time-sep">:</div>
+        <div class="time-block">
+          <span id="seconds">00</span>
+          <label>Soniya / Секунд</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SCHEDULE SECTION ========== -->
+    <section id="schedule" class="fade-in-section">
+      <p class="section-subtitle">Kun tartibi / Расписание дня</p>
+      <h2 class="section-title">Bayram Kuni</h2>
+      <div class="timeline">
+
+        <div class="timeline-item fade-in-section">
+          <div class="timeline-time">14:00</div>
+          <div class="timeline-dot"><span>🌹</span></div>
+          <div class="timeline-content">
+            <h3>Mehmonlarni kutib olish</h3>
+            <p>Встреча гостей</p>
+            <small>The Grand Rose Garden kirish</small>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in-section">
+          <div class="timeline-time">15:00</div>
+          <div class="timeline-dot"><span>💍</span></div>
+          <div class="timeline-content">
+            <h3>Nikoh marosimi</h3>
+            <p>Церемония бракосочетания</p>
+            <small>Asosiy zal · Главный зал</small>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in-section">
+          <div class="timeline-time">16:00</div>
+          <div class="timeline-dot"><span>📸</span></div>
+          <div class="timeline-content">
+            <h3>Foto sessiya</h3>
+            <p>Фотосессия</p>
+            <small>Gul bog'i · Розовый сад</small>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in-section">
+          <div class="timeline-time">17:00</div>
+          <div class="timeline-dot"><span>🥂</span></div>
+          <div class="timeline-content">
+            <h3>Ziyofat boshlanishi</h3>
+            <p>Начало банкета</p>
+            <small>Asosiy ziyofat zali</small>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in-section">
+          <div class="timeline-time">18:30</div>
+          <div class="timeline-dot"><span>🎶</span></div>
+          <div class="timeline-content">
+            <h3>Jonli musiqa & Raqs</h3>
+            <p>Живая музыка и танцы</p>
+            <small>Kechgacha davom etadi · До позднего вечера</small>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in-section">
+          <div class="timeline-time">22:00</div>
+          <div class="timeline-dot"><span>✨</span></div>
+          <div class="timeline-content">
+            <h3>Kechki shou & Tort kesish</h3>
+            <p>Вечернее шоу и торт</p>
+            <small>Bayramning yakuniy qismi</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer id="footer" class="fade-in-section">
+      <div class="footer-floral">
+        <svg viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 Q75,10 150,30 Q225,50 300,30" stroke="#d4af37" stroke-width="1.5" fill="none" opacity="0.6"/><circle cx="150" cy="30" r="5" fill="#d4af37" opacity="0.8"/><circle cx="75" cy="18" r="3" fill="#f4c2c2" opacity="0.7"/><circle cx="225" cy="42" r="3" fill="#f4c2c2" opacity="0.7"/><path d="M140,30 Q145,20 150,15 Q155,20 160,30" fill="#f4c2c2" opacity="0.5"/></svg>
+      </div>
+      <div class="footer-names shimmer-text">Subxon & Malika</div>
+      <div class="footer-date">20 · 09 · 2026</div>
+      <div class="footer-venue">The Grand Rose Garden, Toshkent</div>
+      <div class="footer-quote">
+        "Sevgi — bu ikki qalbning bir urishidir."
+        <br/><em>«Любовь — это биение двух сердец в унисон.»</em>
+      </div>
+      <div class="footer-bottom">Made with 🌹 for Subxon & Malika</div>
+    </footer>
+
+  </div><!-- end #main-content -->
+
+  <!-- ========== MUSIC PLAYER ========== -->
+  <button id="music-btn" class="hidden" onclick="toggleMusic()" title="Musiqa / Музыка">
+    <span id="music-icon">♪</span>
+  </button>
+
+  <!-- 
+    MUSIC: Sovket Elekberova — Billie Eilish Remix (Alagozlum / Lovely)
+    Place the MP3 file in the same folder as index.html and update the src below.
+    Example: src="alagozlum.mp3"
+  -->
+  <audio id="bg-music" loop>
+    <source src="Sovket_Elekberova_Billie_Eilish_Remix_Alagozlum_Lovely.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
